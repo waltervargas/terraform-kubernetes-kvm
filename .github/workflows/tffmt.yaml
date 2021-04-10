@@ -1,6 +1,6 @@
 name: tffmt
 
-on: [push, pull_request]
+on: [push]
 
 jobs:
   check_format:
