@@ -3,7 +3,8 @@ name: tflint
 on: [push]
 
 jobs:
-  delivery:
+  tflint:
+    name: Check terraform files are correct
 
     runs-on: ubuntu-latest
 
