@@ -1,0 +1,15 @@
+# More information on this configuration properties on:
+# https://cloudinit.readthedocs.io/en/latest/topics/network-config-format-v2.html#network-config-v2
+
+version: 2
+ethernets:
+  ens3:
+    match:
+      macaddress: '52:54:00:1A:F8:D6"'
+    dhcp4: true
+  ens4:
+    match:
+      macaddress: '52:54:00:1E:93:5A"'
+    addresses:
+      - 10.241.0.254/24 
+ 
