@@ -2,6 +2,9 @@ resource "libvirt_network" "k8s" {
   # the name used by libvirt
   name = "dev.k8s.local"
 
+  # autostart this network
+  autostart = true
+
   # mode can be: "nat" (default), "none", "route", "bridge"
   mode = "route"
 
